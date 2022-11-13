@@ -13,7 +13,7 @@ def main():
     bot_token = os.environ["INPUT_BOT_TOKEN"]
     bot_chat_id = os.environ["INPUT_BOT_CHAT_ID"]
     is_success = os.environ["INPUT_IS_SUCCESS"] == "true"
-    project_name = os.environ["PROJECT_NAME"]
+    project_name = os.environ["INPUT_PROJECT_NAME"]
 
     if (is_success):
         if (project_name != None):
