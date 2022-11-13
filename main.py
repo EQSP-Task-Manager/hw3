@@ -17,14 +17,14 @@ def main():
 
     if (is_success):
         if (project_name != None):
-            bot_message = f"Your project \" {project_name} \" is successfully built"
+            bot_message = f"Your project \"{project_name}\" is successfully built"
         else:
             bot_message = f"Your project is successfully built"
     else:
         if (project_name != None):
-            bot_message = f"Your project \" {project_name} \" build failed"
+            bot_message = f"The build of your \"{project_name}\" project failed"
         else:
-            bot_message = f"Your project build failed"
+            bot_message = f"The build of your project failed"
 
     telegram_bot_sendtext(bot_token=bot_token,
                           bot_chat_id=bot_chat_id, bot_message=bot_message)
