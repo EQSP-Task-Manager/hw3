@@ -1,0 +1,20 @@
+name: "Telegram build notifier"
+description: "Recieve a telegram notification about the status of your build"
+author: "Parth Kalkar, following a tutorial by Jacob Tomlinson"
+
+inputs:
+  bot_token:
+    description: "Your Bot token"
+    required: true
+  bot_chat_id:
+    description: "Your chat ID"
+    required: false
+  is_success:
+    description: "Status of build"
+    required: true
+  project_name:
+    required: false
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
