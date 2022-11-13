@@ -22,7 +22,7 @@ def main():
             bot_message = f"Your project is successfully built"
     else:
         if (project_name != None):
-            bot_message = f"Your project \" {project_name} \" built failed"
+            bot_message = f"Your project \" {project_name} \" build failed"
         else:
             bot_message = f"Your project build failed"
 
